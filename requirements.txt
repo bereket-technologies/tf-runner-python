@@ -1,0 +1,38 @@
+# CyberArk SDK
+ark-sdk-python>=2.1.0
+
+# HTTP and SSL handling
+requests>=2.25.0
+urllib3>=1.26.0
+certifi>=2021.5.30
+
+# Authentication and security
+pycryptodome>=3.15.0
+pyjwt>=2.3.0
+cryptography>=3.4.0
+
+# Data handling and validation
+pydantic>=2.0.0
+aenum>=3.1.0
+
+# CLI and user interaction
+inquirer>=2.7.0
+argcomplete>=2.0.0
+
+# Progress and logging
+progress>=1.6
+colorama>=0.4.4
+
+# Windows-specific (if needed)
+pywin32>=300; sys_platform == "win32"
+pywinpty>=3.0.0; sys_platform == "win32"
+
+# Development and testing (optional)
+pytest>=6.0.0
+black>=21.0.0
+flake8>=3.9.0
+
+# Additional utilities
+pyyaml>=6.0
+python-dateutil>=2.8.0
+tzlocal>=4.0.0
