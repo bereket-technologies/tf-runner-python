@@ -13,6 +13,7 @@ resource "null_resource" "hello_world" {
   }
 }
 
+/*
 resource "google_storage_bucket" "terraform_state" {
   name          = "tf-runner-dev-buckket"
   location      = "us-central1"
@@ -59,4 +60,4 @@ resource "google_storage_bucket" "terraform_state" {
     managed_by  = "terraform"
   }
 }
-
+*/
