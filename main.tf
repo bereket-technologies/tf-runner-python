@@ -13,6 +13,8 @@ resource "null_resource" "hello_world" {
   }
 }
 
+/*
+
 resource "google_project" "my_project" {
   name            = "My Application Project"
   project_id      = "bts-app-prod-${random_id.project_suffix.hex}"
@@ -82,4 +84,4 @@ resource "google_storage_bucket" "terraform_state" {
     managed_by  = "terraform"
   }
 }
-
+*/
