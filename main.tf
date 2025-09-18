@@ -21,7 +21,7 @@ resource "google_storage_bucket" "terraform_state" {
 
   # Prevent accidental deletion of the bucket
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
   # Enable versioning for state file history
