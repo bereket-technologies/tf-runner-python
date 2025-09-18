@@ -13,13 +13,14 @@ resource "null_resource" "hello_world" {
   }
 }
 
-/*
+
 
 resource "google_project" "my_project" {
   name            = "My Application Project"
   project_id      = "bts-app-prod-${random_id.project_suffix.hex}"
   folder_id       = "folders/678542401727"
   billing_account = "0122AB-162FF8-990BC9"
+  deletion_policy = "DELETE"
   
   # Prevent accidental deletion
   lifecycle {
@@ -37,7 +38,7 @@ resource "google_project" "my_project" {
 resource "random_id" "project_suffix" {
   byte_length = 4
 }
-
+/*
 resource "google_storage_bucket" "terraform_state" {
   name          = "tf-runner-dev-buckket"
   location      = "us-central1"
